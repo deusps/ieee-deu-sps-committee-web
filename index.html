@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPS DEU ANASAYFA || Teknoloji ve Gelecek</title>
+    <link rel="icon" type="image/png" href="logosps.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="logosps.png" alt="SPS DEU Logo"></a>
+
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#upcoming-events">Yaklaşan Etkinlikler</a></li>
+                <li><a href="#past-events">Geçmiş Etkinlikler</a></li>
+                <li><a href="#sponsorlar">Sponsorlarımız</a></li>
+                <li><a href="#kayit" class="btn-nav">Bize Katıl!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>GELECEĞİN SİNYALLERİNİ ŞEKİLLENDİR</h1>
+            <p>Biz IEEE DEU SPS'iz. Arduino kartlarını konuşturuyor, görüntü ve sinyalleri işleyerek anlamlı bilgilere
+                dönüştürüyoruz. Veri bilimi ve yapay zeka projeleriyle "imkansız" denileni hedefliyoruz. Eğer siz de
+                öğrenmeye, üretmeye ve harika bir ekiple çalışmaya hevesliyseniz, siz de bu ekibin bir parçası olun!</p>
+            <a href="#kayit" class="btn btn-pulse">Topluluğa Katıl</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hakkimizda">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Biz Kimiz?</h3>
+                        <p>Dokuz Eylül Üniversitesi IEEE Sinyal İşleme (SPS) Komitesi olarak temel misyonumuz, bu
+                            potansiyeli açığa çıkarmak ve teknolojik gelişime öncülük etmektir. Bizi bir araya getiren
+                            şey, günümüz teknolojisinin temelini oluşturan <b>Yapay Zekâ, Makine Öğrenmesi, Görüntü
+                                İşleme, İletişim Sistemleri</b> ve <b>Arduino</b> gibi stratejik alanlara duyduğumuz
+                            tutkudur.</p><br>
+                        <p>Biz, teorinin sınırlarını zorluyor ve "imkânsıza" kodlarımızla meydan okuyoruz.
+                            Düzenlediğimiz teknik eğitimler, uygulamalı atölye çalışmaları ve sektör zirveleri
+                            aracılığıyla teorik bilgiyi pratik deneyimle buluşturuyoruz.</p><br>
+                        <p>Amacımız, üyelerimizi geleceğin yazılım dünyasına yetkin profesyoneller olarak hazırlamaktır.
+                            Çünkü biz sadece bir öğrenci topluluğu değil; geleceği tasarlayan bir ekibiz.</p>
+                    </div>
+                    <div class="about-img">
+                        <img src="indir.jpeg" alt="SPS DEU Ekibi">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeri">
+            <div class="container">
+                <h2 class="section-title">Galeri</h2>
+                <div class="gallery-grid">
+                    <img src="3825.jpg" alt="Etkinlik 1" class="gallery-img">
+                    <img src="3811.jpg" alt="Etkinlik 2" class="gallery-img">
+                    <img src="3761.jpg" alt="Etkinlik 3" class="gallery-img">
+                    <img src="3732.jpg" alt="Etkinlik 4" class="gallery-img">
+                    <img src="3787.HEIC.jpg" alt="Etkinlik 5" class="gallery-img">
+                    <img src="3780.jpg" alt="Etkinlik 6" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="img-enlarged">
+            <div id="caption"></div>
+        </div>
+
+        <section id="upcoming-events">
+            <div class="container">
+                <h2 class="section-title">Yaklaşan Etkinlikler</h2>
+                <div class="event-grid">
+                    <!-- Example Upcoming Event -->
+                    <div class="event-card">
+                        <img src="Stocksy.jpeg" alt="Kariyer Sinyalleri">
+                        <div class="event-card-content">
+                            <h3>Kariyer Sinyalleri</h3>
+                            <p>Tarih: Yakında Duyurulacak</p>
+                            <p>Sektörde fark yaratan mezunlarımızla buluşun. Kariyeriniz için en kritik tavsiyeleri ilk
+                                ağızdan alın.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="past-events">
+            <div class="container">
+                <h2 class="section-title">Geçmiş Etkinliklerimiz</h2>
+                <div class="slider-wrapper">
+                    <button class="slider-btn prev-btn"><i class="material-icons">chevron_left</i></button>
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="event-card">
+                                <img src="ffg.jpeg" alt="Manisa Teknokent">
+                                <div class="event-card-content">
+                                    <h3>Manisa Teknokent Gezisi</h3>
+                                    <p>Tarih: 28 Kasım 2025</p><br>
+                                    <p>AR-GE laboratuvarlarını ziyaret ediyor, yapay zeka ve sinyal işleme alanındaki en
+                                        son
+                                        projeleri uzmanlarından dinliyoruz.</p>
+                                </div>
+                            </div>
+                            <div class="event-card">
+                                <img src="veribilimi.jpeg" alt="R ve Python">
+                                <div class="event-card-content">
+                                    <h3>Veri Bilimi ve Uygulamalı Proje Atölyesi Duyurusu</h3>
+                                    <p>Tarih: 19.12.2025</p><br>
+                                    <p>Veri bilimi yetkinliklerinizi geliştirmeye hazır mısınız? IEEE DEU SPS ve Verinin
+                                        Mutfağı
+                                        iş birliğiyle bugün gerçekleşecek atölyemizde; veri işleme, analiz ve mini proje
+                                        süreçlerini uzmanından dinleyeceğiz.</p>
+                                </div>
+                            </div>
+                            <!-- More past events can be added here -->
+                            <div class="event-card">
+                                <img src="3811.jpg" alt="Eski Etkinlik">
+                                <div class="event-card-content">
+                                    <h3>Sinyal İşleme Zirvesi</h3>
+                                    <p>Tarih: 2024</p><br>
+                                    <p>Geçmiş yıllarda düzenlenen büyük zirvemizden kareler.</p>
+                                </div>
+                            </div>
+                            <div class="event-card">
+                                <img src="3825.jpg" alt="Eski Etkinlik 2">
+                                <div class="event-card-content">
+                                    <h3>Tanışma Toplantısı</h3>
+                                    <p>Tarih: 2024</p><br>
+                                    <p>Yeni üyelerimizle kaynaşma etkinliği.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn next-btn"><i class="material-icons">chevron_right</i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsorlar">
+            <div class="container">
+                <h2 class="section-title">Sponsorlarımız</h2>
+                <div class="sponsor-grid">
+                    <div class="sponsor-item"><img src="" alt=""></div>
+                    <div class="sponsor-item"><img src="" alt=""></div>
+                    <div class="sponsor-item"><img src="d" alt=""></div>
+                    <div class="sponsor-item"><img src="" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kayit">
+            <div class="container">
+                <div class="join-wrapper">
+                    <div class="join-box">
+                        <div class="join-content">
+                            <h2>Topluluğa Katıl</h2>
+                            <p>Etkinliklerden, teknik eğitimlerden ve araştırma fırsatlarından ilk sen haberdar ol.</p>
+                            <ul class="feature-list">
+                                <li class="feature-item">🔬 <span>Araştırma ve Proje Ekibi Deneyimi</span></li>
+                                <li class="feature-item">🎓 <span>Teknik Eğitimler ve Workshoplar</span></li>
+                                <li class="feature-item">🤝 <span>Akademik ve Endüstriyel Networking</span></li>
+                                <li class="feature-item">🚀 <span>Veri Bilimi ve Proje Olanakları</span></li>
+                            </ul>
+                        </div>
+                        <div class="join-buttons">
+                            <a href="https://docs.google.com/forms/d/1NPr5Lzk4UzilWIoZpJ3H9NgyfyPSfjKjYEH0gQgCPf0/viewform"
+                                target="_blank" class="btn">Komite Seçim Formu</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc_IIa9ow2O5NBbVl6lE0l8KYxlx6VOMGoSJ3as0mjUGRgpg/viewform"
+                                target="_blank" class="btn">Proje Ekibi Formu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="iletisim">
+            <div class="container">
+                <h2 class="section-title">İletişim</h2>
+                <div class="contact-wrapper">
+                    <p>Sorularınız ve projeleriniz için bize ulaşın.</p>
+                    <ul class="contact-links">
+                        <li><a href="mailto:ieeedeu.sps@gmail.com" class="contact-link">📧 E-posta:
+                                ieeedeu.sps@gmail.com</a></li>
+                        <li><a href="https://www.instagram.com/ieeedeu?igsh=NTBwazhjMjU5dTI5" target="_blank"
+                                class="contact-link">📸 Instagram: @ieeedeu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 IEEE DEU Öğrenci Topluluğu SPS Komitesi. <a href="https://www.ieee.org" target="_blank"
+                    style="color:white;">IEEE</a> & <a href="https://www.deu.edu.tr" target="_blank"
+                    style="color:white;">DEU</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

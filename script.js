@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
 
+=======
+document.addEventListener("DOMContentLoaded", function() {
+    
+>>>>>>> 326ae69abc3a77eca79fd0ef623f1a805217c344
     // --- HAMBURGER MENÜ ---
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     const navItems = document.querySelectorAll(".nav-links li a");
 
+<<<<<<< HEAD
     if (hamburger) {
+=======
+    if(hamburger) {
+>>>>>>> 326ae69abc3a77eca79fd0ef623f1a805217c344
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("active");
             hamburger.classList.toggle("active");
@@ -42,7 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Boşluğa tıklayınca kapatma
     lightbox.addEventListener("click", (e) => {
+<<<<<<< HEAD
         if (e.target === lightbox) {
+=======
+        if(e.target === lightbox) {
+>>>>>>> 326ae69abc3a77eca79fd0ef623f1a805217c344
             lightbox.style.display = "none";
             document.body.style.overflow = "auto";
         }
@@ -50,13 +63,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // --- NAVBAR SCROLL ---
     const navbar = document.querySelector('.navbar');
+<<<<<<< HEAD
     window.addEventListener('scroll', function () {
+=======
+    window.addEventListener('scroll', function() {
+>>>>>>> 326ae69abc3a77eca79fd0ef623f1a805217c344
         if (window.scrollY > 50) {
             navbar.style.boxShadow = "0 4px 10px rgba(0,0,0,0.1)";
         } else {
             navbar.style.boxShadow = "none";
         }
     });
+<<<<<<< HEAD
 
     // --- EVENTS SLIDER ---
     const sliderContainer = document.querySelector('.slider-container');
@@ -72,4 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
             sliderContainer.scrollBy({ left: 320, behavior: 'smooth' });
         });
     }
+=======
+>>>>>>> 326ae69abc3a77eca79fd0ef623f1a805217c344
 });

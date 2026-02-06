@@ -8,7 +8,7 @@ backend:
 
 # CMS üzerinden yüklenen resimler bu klasöre gider
 media_folder: "assets/images"
-public_folder: "assets/images"
+public_folder: "/assets/images"
 
 locale: "tr"
 

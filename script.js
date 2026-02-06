@@ -40,8 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function getImagePath(img) {
         if (!img) return "";
-        if (img.startsWith("/") || img.startsWith("http")) return img;
-        return BASE_PATH + "/" + img;
+        if (img.startsWith("http")) return img;
+        if (BASE_PATH) return BASE_PATH + (img.startsWith("/") ? img : "/" + img);
+        return img.startsWith("/") ? img : img;
     }
 
     function renderUpcomingEvents(events) {

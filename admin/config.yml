@@ -1,5 +1,6 @@
 # IEEE DEU SPS - Decap CMS Konfigürasyonu
 # Netlify Identity + Git Gateway ile çalışır
+# Yerel test için: local_backend: true ekleyip "npx decap-server" çalıştırın
 
 backend:
   name: git-gateway
@@ -7,7 +8,7 @@ backend:
 
 # CMS üzerinden yüklenen resimler bu klasöre gider
 media_folder: "assets/images"
-public_folder: "/assets/images"
+public_folder: "assets/images"
 
 locale: "tr"
 

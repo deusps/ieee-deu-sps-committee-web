@@ -1,0 +1,83 @@
+# IEEE DEU SPS - Decap CMS Konfigürasyonu
+# Netlify Identity + Git Gateway ile çalışır
+
+backend:
+  name: git-gateway
+  branch: main
+
+# CMS üzerinden yüklenen resimler bu klasöre gider
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+locale: "tr"
+
+collections:
+  # --- YAKLAŞAN ETKİNLİKLER ---
+  - name: "upcoming-events"
+    label: "Yaklaşan Etkinlikler"
+    files:
+      - name: "upcoming-events"
+        label: "Yaklaşan Etkinlikler"
+        file: "data/upcoming-events.json"
+        format: "json"
+        fields:
+          - label: "Yaklaşan Etkinlikler"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Etkinlik Adı", name: "title", widget: "string" }
+              - { label: "Tarih", name: "date", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Görsel", name: "image", widget: "image" }
+
+  # --- GEÇMİŞ ETKİNLİKLER ---
+  - name: "past-events"
+    label: "Geçmiş Etkinlikler"
+    files:
+      - name: "past-events"
+        label: "Geçmiş Etkinlikler"
+        file: "data/past-events.json"
+        format: "json"
+        fields:
+          - label: "Geçmiş Etkinlikler"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Etkinlik Adı", name: "title", widget: "string" }
+              - { label: "Tarih", name: "date", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Görsel", name: "image", widget: "image" }
+
+  # --- GALERİ ---
+  - name: "gallery"
+    label: "Galeri"
+    files:
+      - name: "gallery"
+        label: "Galeri"
+        file: "data/gallery.json"
+        format: "json"
+        fields:
+          - label: "Galeri Görselleri"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - { label: "Görsel", name: "image", widget: "image" }
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Alt Metin", name: "alt", widget: "string" }
+
+  # --- SPONSORLAR ---
+  - name: "sponsors"
+    label: "Sponsorlar"
+    files:
+      - name: "sponsors"
+        label: "Sponsorlar"
+        file: "data/sponsors.json"
+        format: "json"
+        fields:
+          - label: "Sponsorlar"
+            name: "sponsors"
+            widget: "list"
+            fields:
+              - { label: "Sponsor Adı", name: "name", widget: "string" }
+              - { label: "Sponsor Logosu", name: "logo", widget: "image" }
+              - { label: "Web Sitesi Linki", name: "website", widget: "string", required: false }

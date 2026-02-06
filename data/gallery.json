@@ -1,0 +1,40 @@
+{
+  "gallery": [
+    {
+      "id": "1",
+      "image": "assets/images/3825.jpg",
+      "title": "Etkinlik 1",
+      "alt": "Etkinlik 1"
+    },
+    {
+      "id": "2",
+      "image": "assets/images/3811.jpg",
+      "title": "Etkinlik 2",
+      "alt": "Etkinlik 2"
+    },
+    {
+      "id": "3",
+      "image": "assets/images/3761.jpg",
+      "title": "Etkinlik 3",
+      "alt": "Etkinlik 3"
+    },
+    {
+      "id": "4",
+      "image": "assets/images/3732.jpg",
+      "title": "Etkinlik 4",
+      "alt": "Etkinlik 4"
+    },
+    {
+      "id": "5",
+      "image": "assets/images/3787.HEIC.jpg",
+      "title": "Etkinlik 5",
+      "alt": "Etkinlik 5"
+    },
+    {
+      "id": "6",
+      "image": "assets/images/3780.jpg",
+      "title": "Etkinlik 6",
+      "alt": "Etkinlik 6"
+    }
+  ]
+}

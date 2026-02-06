@@ -244,6 +244,18 @@ section {
     transform: scale(1.1);
 }
 
+.sponsor-item a {
+    display: block;
+    text-decoration: none;
+}
+
+.sponsor-placeholder {
+    grid-column: 1 / -1;
+    color: var(--text-muted);
+    font-style: italic;
+    padding: 20px;
+}
+
 /* --- LIGHTBOX --- */
 .lightbox {
     display: none;
@@ -460,6 +472,19 @@ section {
     padding: 30px;
     background: var(--text-dark);
     color: white;
+}
+
+.footer-admin-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.45);
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.footer-admin-link:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* --- MOBİL DÜZELTME --- */

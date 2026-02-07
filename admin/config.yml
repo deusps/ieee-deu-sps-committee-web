@@ -4,6 +4,7 @@
 
 backend:
   name: git-gateway
+  site_url: https://ieeedeusps.netlify.app
   branch: main # Branch to update (optional; defaults to master)
 
 # CMS üzerinden yüklenen resimler bu klasöre gider

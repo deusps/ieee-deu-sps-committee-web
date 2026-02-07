@@ -4,7 +4,7 @@
 
 backend:
   name: git-gateway
-  branch: main
+  branch: main # Branch to update (optional; defaults to master)
 
 # CMS üzerinden yüklenen resimler bu klasöre gider
 media_folder: "assets/images"

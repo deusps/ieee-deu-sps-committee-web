@@ -19,16 +19,8 @@
     <div id="nc-root"></div>
 
     <script>
-        // Netlify Identity Yeniden Yönlendirme Mantığı
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on('init', user => {
-                if (!user) {
-                    window.netlifyIdentity.on('login', () => {
-                        document.location.href = '/admin/';
-                    });
-                }
-            });
-        }
+        // Decap CMS automatically handles Netlify Identity login for git-gateway.
+        // The manual redirect logic is typically required on the main index.html, not here.
     </script>
 </body>
 
